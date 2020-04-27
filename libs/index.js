@@ -1,5 +1,5 @@
 $(function() {
-  $("header__search").on("click", function() {
-    $("header__input").toggleClass("opened");
+  $(".header__search").on("click", function() {
+    $(".header__input").toggleClass("opened");
   });
 });
