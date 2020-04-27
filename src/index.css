@@ -1,0 +1,120 @@
+.header {
+  padding: 30px 0;
+  color: #fff;
+}
+
+.header .header__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.header .header__nav .header__logo {
+  margin-right: 200px;
+}
+
+.header .header__nav .header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .header__nav .header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 0 !important;
+}
+
+.header .header__nav .header__list li a {
+  color: red;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: #00000086;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-align: right;
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.header .header__nav .header__list li a:hover {
+  color: #000000;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header .header__nav .header__list li a .header__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.header .header__nav .header__search {
+  cursor: pointer;
+  position: relative;
+}
+
+.header .header__nav .header__search .header__input {
+  position: absolute;
+  top: -10px;
+  right: 25px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  padding: 10px 20px;
+  outline: none;
+  display: none;
+}
+
+.header .header__nav .header__search .header__input.opened {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  width: 100%;
+  padding: 0 20px;
+  margin: 0 auto;
+}

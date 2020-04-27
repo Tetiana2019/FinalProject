@@ -1,15 +1,8 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.container {
-  max-width: 1200px;
-  width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
-}
+@import "./pages/home.scss";
+@import "./pages/about.scss";
+@import "./pages/blog.scss";
+@import "./pages/portfolio.scss";
+@import "./pages/portfolio_details.scss";
+@import "./pages/single_post.scss";
+@import "./pages/contact.scss";
+@import "./components/spec.scss"
