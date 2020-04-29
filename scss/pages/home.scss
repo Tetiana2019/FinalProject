@@ -1,93 +1,107 @@
 .header {
-  padding: 30px 0;
-  color: #fff;
-  .header__nav {
+  background-color: #fff;
+  .header__menu {
     display: flex;
+    justify-content: space-around;
     align-items: center;
-    justify-content: space-between;
-    .header__logo {
-      margin-right: 200px;
-    }
-    .header__wrap {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+    min-height: 9vh;
     .header__list {
       display: flex;
-      text-decoration: none;
-      align-items: center;
-      justify-content: center;
+      justify-content: space-around;
+      width: 50%;
       list-style: none;
-      margin-bottom: 0 !important;
-    }
-    .header__list li a {
-      color: red;
-      text-transform: uppercase;
-      font-size: 14px;
-      letter-spacing: 1px;
-      line-height: 1.2;
-      color: #00000086;
-      font-family: "Roboto";
-      font-weight: 700;
-      text-align: right;
-      margin-right: 40px;
-      text-decoration: none;
-      &:hover {
-        color: #000000;
-        transition: 0.3s;
-      }
-
-      .header__search {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-    .header__search {
-      cursor: pointer;
-      position: relative;
-      .header__input {
-        position: absolute;
-        top: -10px;
-        right: 25px;
-        border: 1px solid #000000;
-        border-radius: 5px;
-        padding: 10px 20px;
-        outline: none;
-        display: none;
-        &.opened {
-            display: block;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      .header__link {
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 1.2;
+        color: #00000080;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        &:hover {
+          color: #000000;
         }
       }
     }
-
-    // .header__search {
-    //   .search__txt {
-    //     background-color: #000000;
-    //     border: none;
-    //     outline: none;
-    //     background: none;
-    //     padding: 0;
-    //     color:  #000000;
-    //     font-size: 15px;
-    //     transition: 0.3s;
-    //     line-height: 40px;
-    //     width: 0;
-    //   }
-    //   .search__bnt {
-    //     color: #00000086;
-    //     &:hover {
-    //         color: #000000;
-    //         transition: .4s;
-    //     }
-    //   }
-    //   &:hover .search__txt {
-    //     width: 250px;
-    //     padding: 0 10px;
-    //     border: 1px solid #000000;
-    //     transition: .4s;
-    //   }
-    // }
+    .header__burger {
+      display: none;
+      div {
+        width: 40px;
+        height: 2px;
+        background-color: #000000;
+        margin: 6px;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header__list {
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    width: 50%;
+    position: absolute;
+    margin-right: 0;
+    right: 0;
+    height: 92vh;
+    top: 0;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.021);
+    text-decoration: underline;
+    margin-right: 0;
+    transform: translateX(100%);
+  }
+  .header__link {
+    opacity: 0;
+  }
+  .header__burger {
+    display: block;
+  }
+}
+.header__search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -50px;
+  margin-right: 10px;
+  cursor: pointer;
+  position: relative;
+  .header__input {
+    position: absolute;
+    top: -14px;
+    right: 25px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    padding: 10px;
+    height: 40px;
+    outline: none;
+    display: none;
+    &.opened {
+      display: block;
+    }
+  }
+  .search__bnt {
+    color: #00000086;
+    display: flex;
+    top: 50px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    margin-left: 40px;
+    &:hover {
+      color: #000000;
+      transition: 0.3s;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .search__btn {
+    margin-left: 150px;
   }
 }
